@@ -8,3 +8,4 @@
 7-movethatfile - This script moves a file from one directory to another directory.
 8-firstdelete - This script deletes a file in a specified directory.
 9-firstdirdeletion - This script deletes a directory.
+10-back - This script changes the working directory to the previous one.
