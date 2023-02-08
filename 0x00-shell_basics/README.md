@@ -9,3 +9,4 @@
 8-firstdelete - This script deletes a file in a specified directory.
 9-firstdirdeletion - This script deletes a directory.
 10-back - This script changes the working directory to the previous one.
+11-lists - This script lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
