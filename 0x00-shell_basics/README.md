@@ -16,3 +16,4 @@
 100-lets_move - This script moves all files beginning with an uppercase letter to a specified directory.
 101-clean_emacs - This script deletes all files in the current working directory that end with the character ~.
 102-tree - This script creates multiple directories.
+103-commas - This is a script that lists all the files and directories of the current directory, separated by commas (,).
