@@ -6,3 +6,4 @@
 5-listfilesdigitonly - This script displays current directory contents in long format, with user and group IDs displayed numerically and hidden files(starting with .).
 6-firstdirectory - This script will create a directory in a specified directory.
 7-movethatfile - This script moves a file from one directory to another directory.
+8-firstdelete - This script deletes a file in a specified directory.
