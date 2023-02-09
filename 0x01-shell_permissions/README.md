@@ -10,5 +10,7 @@
 9-John_Doe - This script sets the mode of a specified file to specified permissions.
 10-mirror_permissions - This script allows a file to emulate the permissions of a specified file.
 11-directories_permissions - This script adds execute permissions to all subdirectories of the current working directory for the owner,group owner and other users.
-12-directory_permissions - This script creates a directory with specified permissions
-13-change_group - This script changes the group owner for a specified file
+12-directory_permissions - This script creates a directory with specified permissions.
+13-change_group - This script changes the group owner for a specified file.
+100-change_owner_and_group - This script changes the owner and group owner for all the files and directories in the working directory.
+101-symbolic_link_permissions - This script changes the owner and group owner of a specified file.
