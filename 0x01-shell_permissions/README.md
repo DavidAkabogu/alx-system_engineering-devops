@@ -10,3 +10,4 @@
 9-John_Doe - This script sets the mode of a specified file to specified permissions.
 10-mirror_permissions - This script allows a file to emulate the permissions of a specified file.
 11-directories_permissions - This script adds execute permissions to all subdirectories of the current working directory for the owner,group owner and other users.
+12-directory_permissions - This script creates a directory with specified permissions
