@@ -2,4 +2,10 @@
 # run apache on designated container
 
 echo "ServerName localhost" >> /etc/apache2.conf
-service apache2 start
+
+# Check if apache is running
+if ! systemctl is-active apache2 >/dev/null 2>&1; then
+	sudo service apache2 start
+fi
+
+echo "Apache is running"
