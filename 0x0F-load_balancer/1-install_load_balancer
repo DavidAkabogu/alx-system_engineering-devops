@@ -12,11 +12,11 @@ sudo sed -i 's/^\(ENABLED=\).*/\11/' /etc/default/haproxy
 # Create a new HAProxy configuration file
 echo \
 	"
-frontend realmigo.tech
+frontend davidking.tech
 	bind *:80
 	mode http
-	default_backend realmigo.tech
-backend realmigo.tech
+	default_backend davidking.tech
+backend davidking.tech
 	mode http
 	balance roundrobin
 	server 292197-web-01 18.215.160.57
