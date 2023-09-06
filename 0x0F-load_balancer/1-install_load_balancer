@@ -1,23 +1,26 @@
 #!/usr/bin/env bash
-# Installs and setup haproxy
+# configure a load-balancing server
 
-apt-get install -y software-properties-common
-add-apt-repository -y ppa:vbernat/haproxy-1.8
-apt-get -y update
-apt-get install -y haproxy=1.8.\*
+# Install HAProxy
+sudo apt-get install -y --no-install-recommends software-properties-common
+sudo apt-get update -y
+sudo apt-get install -y haproxy
 
-echo "ENABLED=1" > /etc/default/haproxy
+# Configure HAProxy
+sudo sed -i 's/^\(ENABLED=\).*/\11/' /etc/default/haproxy
 
-# Listen to web1 and web2 servers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-echo "
-   listen load_balancer
-   bind *:80
-   mode http
-   balance roundrobin
-   option httpclose
-   option forwardfor
-   server 17272-web-01 44.200.83.158:80 check
-   server 17272-web-02 3.237.16.226:80 check
-" >> /etc/haproxy/haproxy.cfg
+# Create a new HAProxy configuration file
+echo \
+	"
+frontend realmigo.tech
+	bind *:80
+	mode http
+	default_backend realmigo.tech
+backend realmigo.tech
+	mode http
+	balance roundrobin
+	server 292197-web-01 18.215.160.57
+	server 292197-web-02 3.80.18.18" >> /etc/haproxy/haproxy.cfg
 
-service haproxy start
+# Restart HAProxy service
+sudo service haproxy restart
