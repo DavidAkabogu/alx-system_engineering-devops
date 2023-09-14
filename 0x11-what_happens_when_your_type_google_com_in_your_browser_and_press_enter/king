@@ -1,0 +1,33 @@
+What happens when you type google.com in your browser and press Enter ?
+
+Have you ever wondered what transpires when you type "www.google.com" in your browser and hit Enter? This seemingly simple action triggers a complex chain of events that enables you to access the webpage you're looking for.
+
+ In this article, we'll dissect the intricate processes required to access the webpage you're looking for, covering essential concepts like DNS requests, TCP/IP, Firewalls, HTTPS/SSL, Load-balancers, Web servers, Application servers, and Databases.
+
+DNS (Domain Name System) Request
+The voyage commences with your browser sending a DNS request to a DNS resolver. The purpose of this request is to translate the human-readable domain name (www.google.com) into an IP address that computers can understand. The DNS resolver checks its cache for a matching entry, and if not found, it contacts authoritative DNS servers to find the correct IP address.
+
+TCP/IP (Transmission Control Protocol/Internet Protocol)
+Once the DNS resolver obtains the IP address, it initiates a TCP/IP connection.  This duo of protocols forms the bedrock of communication over the internet. TCP ensures reliable data exchange by establishing a reliable connection between your computer and Google's servers.
+
+Firewall
+Next, the request passes through any firewalls that may be in place. Network security tools called firewalls keep an eye on both incoming and outgoing network traffic before deciding to allow or restrict a particular type of communication in accordance with predefined criteria. Firewalls act as a barrier between your network and external networks, enforcing security policies ensuring that only authorized data flows through. This crucial security measure safeguards against potential cyber threats.
+
+HTTPS/SSL
+If the website uses HTTPS (Hypertext Transfer Protocol Secure), an additional layer of security comes into play. HTTPS encrypts the data exchanged between your browser and the web server, safeguarding it from potential eavesdroppers. This encryption is facilitated by SSL (Secure Sockets Layer) or its successor, TLS (Transport Layer Security).
+
+Load-Balancer
+Large websites like Google often employ load balancers to distribute incoming traffic across multiple servers. This ensures that no single server becomes overwhelmed, improving overall performance and reliability. Load balancers use algorithms to determine which server should handle each request.
+
+Web Server
+Upon reaching Google's servers, the request is intercepted by a web server. The web server's job is to process the request and generate an appropriate response. It retrieves the requested web page and sends it back to your browser through the established TCP/IP connection.
+
+Application Server
+If the web page requires dynamic content or interaction with databases, the web server forwards the request to an application server. This server is responsible for executing application logic, interacting with databases, and generating dynamic content. It then sends the processed data back to the web server.
+
+Databases
+Databases store data in a structured style that facilitates quick searches and regular maintenance. Any kind of information can be saved, managed, and retrieved with the help of a database. In cases where the requested information requires retrieval from a database, the application server communicates with the database server. The database server retrieves the relevant data, which is then sent back to the application server for further processing.
+
+Conclusion
+These are merely some broad strokes of how the web operates, but I hope that this has been of some use to individuals who are curious about what happens when you type in www.google.com in the browser and push enter.
+I want to offer my sincere gratitude for reading this far and I hope to see you again soon.
