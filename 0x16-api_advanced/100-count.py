@@ -53,3 +53,15 @@ def count_words(subreddit, word_list, instances={}, after="", count=0):
         [print("{}: {}".format(k, v)) for k, v in instances]
     else:
         count_words(subreddit, word_list, instances, after, count)
+
+    if __name__ == "__main__":
+        import sys
+
+        if len(sys.argv) < 3:
+            print("Usage: {} <subreddit> <list of keywords>".format(sys.argv[0]))
+            print("Ex: {} programming 'python java javascript'"
+              .format(sys.argv[0]))
+        else:
+            subreddit = sys.argv[1]
+            word_list = [x.lower() for x in sys.argv[2].split()]
+            count_words(subreddit, word_list)
